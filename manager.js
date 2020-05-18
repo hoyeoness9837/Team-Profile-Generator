@@ -1,33 +1,4 @@
-const Employee = require('./employee.js');
-const { prompt } = require('inquirer');
-const addManager = () => {
-  prompt([
-    {
-      type: 'input',
-      name: 'name',
-      message: 'Type in the name',
-    },
-    {
-      type: 'input',
-      name: 'id',
-      message: 'Type in the id',
-    },
-    {
-      type: 'input',
-      name: 'title',
-      message: 'Type in the title',
-    },
-    {
-      type: 'input',
-      name: 'officeNumber',
-      message: 'Type in the office number',
-    },
-  ])
-    .then((managerdata) => {
-      console.log(managerdata);
-    })
-    .catch((err) => console.log(err));
-};
+// const Employee = require('./employee.js');
 
 class Manager extends Employee {
   constructor(name, id, title, officeNumber) {
@@ -39,9 +10,8 @@ class Manager extends Employee {
   }
 }
 
-const kim = new Manager('kim', 1, 'Manager', 1);
+const kim = new Manager(name, id, title, officeNumber);
 console.log(kim.getName());
 console.log(kim.getId());
 console.log(kim.getRole());
-console.log(kim.getEmail('kim@email.com'));
 console.log(kim.officeNumber);

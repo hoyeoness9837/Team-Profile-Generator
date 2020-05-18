@@ -1,4 +1,4 @@
-const Employee = require('./employee.js');
+// const Employee = require('./employee.js');
 const { prompt } = require('inquirer');
 prompt([
   {
@@ -41,9 +41,8 @@ class Engineer extends Employee {
   }
 }
 
-const lee = new Engineer('lee', 2, 'Engineer', 'github.com');
+const lee = new Engineer(name, id, title, Github);
 console.log(lee.getName());
 console.log(lee.getId());
 console.log(lee.getRole());
-console.log(lee.getEmail('lee@email.com'));
 console.log(lee.getGithub());
