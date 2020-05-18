@@ -1,0 +1,33 @@
+:root {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.card {
+  display: inline-block;
+  border: 1px solid dimgray;
+  border-radius: 4px;
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(233, 233, 233);
+}
+.card-title {
+  border-bottom: 1px solid dimgray;
+  background-color: dodgerblue;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+}
+ul {
+  list-style-type: none;
+  padding-right: 40px;
+}
