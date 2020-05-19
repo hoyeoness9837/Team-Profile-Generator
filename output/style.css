@@ -2,11 +2,19 @@
   text-align: center;
 }
 
+nav {
+  background-color: steelblue;
+  font-weight: bold;
+  font-size: 36px;
+  padding: 2rem;
+}
+
 .container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   width: 100vw;
   height: 100vh;
@@ -15,6 +23,7 @@
   display: inline-block;
   border: 1px solid dimgray;
   border-radius: 4px;
+  box-shadow: 3px 3px 1px grey;
   width: fit-content;
   height: fit-content;
   background-color: rgb(233, 233, 233);
