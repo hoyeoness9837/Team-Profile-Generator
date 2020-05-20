@@ -1,7 +1,6 @@
 const { prompt } = require('inquirer');
 const { promisify } = require('util');
 const { writeFile } = require('fs').promises;
-
 prompt([
   {
     type: 'input',
